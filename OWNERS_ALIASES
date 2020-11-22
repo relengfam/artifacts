@@ -1,6 +1,72 @@
 # See the OWNERS docs at https://go.k8s.io/owners#owners_aliases
 
 aliases:
+  # Maintainers
+  artifact-approvers:
+    - bartsmykla # WG K8s Infra Lead
+    - dims # WG K8s Infra Lead
+    - hasheddan # subproject owner / Release Manager / SIG Technical Lead
+    - justaugustus # subproject owner / Release Manager / SIG Chair
+    - listx # Container image promoter admin
+    - saschagrunert # subproject owner / Release Manager / SIG Chair
+    - spiffxp # WG K8s Infra Lead
+    - thockin # Container image promoter admin
+  artifact-reviewers:
+    - bartsmykla # WG K8s Infra Lead
+    - dims # WG K8s Infra Lead
+    - hasheddan # subproject owner / Release Manager / SIG Technical Lead
+    - justaugustus # subproject owner / Release Manager / SIG Chair
+    - listx # Container image promoter admin
+    - saschagrunert # subproject owner / Release Manager / SIG Chair
+    - spiffxp # WG K8s Infra Lead
+    - thockin # Container image promoter admin
+
+  # Synced from k/k8s.io (last updated: 11/22/20)
+  build-image-approvers:
+    - BenTheElder
+    - cblecker
+    - dims
+    - justaugustus
+    - listx
+  build-image-reviewers:
+    - BenTheElder
+    - cblecker
+    - dims
+    - justaugustus
+    - listx
+  cip-approvers:
+    - justaugustus
+    - justinsb
+    - listx
+    - thockin
+  cip-reviewers:
+    - justaugustus
+    - justinsb
+    - listx
+    - thockin
+  release-engineering-approvers:
+    - alejandrox1 # SIG Technical Lead
+    - cpanato # Release Manager
+    - feiskyer # Release Manager
+    - hasheddan # subproject owner / Release Manager / SIG Technical Lead
+    - idealhack # Release Manager
+    - justaugustus # subproject owner / Release Manager / SIG Chair
+    - puerco # Release Manager
+    - saschagrunert # subproject owner / Release Manager / SIG Chair
+    - tpepper # subproject owner
+    - xmudrii # Release Manager
+  release-engineering-reviewers:
+    - alejandrox1 # SIG Technical Lead
+    - cpanato # Release Manager
+    - feiskyer # Release Manager
+    - hasheddan # subproject owner / Release Manager / SIG Technical Lead
+    - idealhack # Release Manager
+    - justaugustus # subproject owner / Release Manager / SIG Chair
+    - puerco # Release Manager
+    - saschagrunert # subproject owner / Release Manager / SIG Chair
+    - tpepper # subproject owner
+    - xmudrii # Release Manager
+
   # Synced from k/community (last updated: 11/22/20)
   sig-api-machinery-leads:
     - deads2k
