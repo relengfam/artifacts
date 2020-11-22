@@ -1,0 +1,6 @@
+# google group for gcr.io/k8s-staging-releng is k8s-infra-staging-releng@kubernetes.io
+filestores:
+- base: gs://k8s-staging-releng/releases/
+  src: true
+- base: gs://k8s-artifacts-prod/files/releng/releases/
+  service-account: k8s-infra-gcr-promoter@k8s-artifacts-prod.iam.gserviceaccount.com

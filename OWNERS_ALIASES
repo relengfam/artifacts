@@ -1,14 +1,255 @@
 # See the OWNERS docs at https://go.k8s.io/owners#owners_aliases
 
 aliases:
-  # TODO: remove this alias, it will go stale in your repo, and in your repo
-  # you should have your own set of approvers (see OWNERS)
-  # in the original template repo, we must maintain this list to approve changes
-  # to the template itself
-  github-admin-team:
+  # Maintainers
+  artifact-approvers:
+    - bartsmykla # WG K8s Infra Lead
+    - dims # WG K8s Infra Lead
+    - hasheddan # subproject owner / Release Manager / SIG Technical Lead
+    - justaugustus # subproject owner / Release Manager / SIG Chair
+    - listx # Container image promoter admin
+    - saschagrunert # subproject owner / Release Manager / SIG Chair
+    - spiffxp # WG K8s Infra Lead
+    - thockin # Container image promoter admin
+  artifact-reviewers:
+    - bartsmykla # WG K8s Infra Lead
+    - dims # WG K8s Infra Lead
+    - hasheddan # subproject owner / Release Manager / SIG Technical Lead
+    - justaugustus # subproject owner / Release Manager / SIG Chair
+    - listx # Container image promoter admin
+    - saschagrunert # subproject owner / Release Manager / SIG Chair
+    - spiffxp # WG K8s Infra Lead
+    - thockin # Container image promoter admin
+
+  # Synced from k/k8s.io (last updated: 11/22/20)
+  build-image-approvers:
+    - BenTheElder
     - cblecker
-    - fejta
-    - idvoretskyi
+    - dims
+    - justaugustus
+    - listx
+  build-image-reviewers:
+    - BenTheElder
+    - cblecker
+    - dims
+    - justaugustus
+    - listx
+  cip-approvers:
+    - justaugustus
+    - justinsb
+    - listx
+    - thockin
+  cip-reviewers:
+    - justaugustus
+    - justinsb
+    - listx
+    - thockin
+  release-engineering-approvers:
+    - alejandrox1 # SIG Technical Lead
+    - cpanato # Release Manager
+    - feiskyer # Release Manager
+    - hasheddan # subproject owner / Release Manager / SIG Technical Lead
+    - idealhack # Release Manager
+    - justaugustus # subproject owner / Release Manager / SIG Chair
+    - puerco # Release Manager
+    - saschagrunert # subproject owner / Release Manager / SIG Chair
+    - tpepper # subproject owner
+    - xmudrii # Release Manager
+  release-engineering-reviewers:
+    - alejandrox1 # SIG Technical Lead
+    - cpanato # Release Manager
+    - feiskyer # Release Manager
+    - hasheddan # subproject owner / Release Manager / SIG Technical Lead
+    - idealhack # Release Manager
+    - justaugustus # subproject owner / Release Manager / SIG Chair
+    - puerco # Release Manager
+    - saschagrunert # subproject owner / Release Manager / SIG Chair
+    - tpepper # subproject owner
+    - xmudrii # Release Manager
+
+  # Synced from k/community (last updated: 11/22/20)
+  sig-api-machinery-leads:
+    - deads2k
+    - fedebongio
+    - lavalamp
+  sig-apps-leads:
+    - janetkuo
+    - kow3ns
+    - mattfarina
+    - prydonius
+  sig-architecture-leads:
+    - derekwaynecarr
+    - dims
+    - johnbelamaric
+  sig-auth-leads:
+    - deads2k
+    - enj
+    - liggitt
+    - mikedanese
+    - tallclair
+  sig-autoscaling-leads:
+    - gjtempleton
+    - mwielgus
+  sig-cli-leads:
+    - pwittrock
+    - seans3
+    - soltysh
+  sig-cloud-provider-leads:
+    - andrewsykim
+    - cheftako
+  sig-cluster-lifecycle-leads:
+    - fabriziopandini
+    - justinsb
+    - neolit123
+    - timothysc
+  sig-contributor-experience-leads:
+    - castrojo
+    - cblecker
     - mrbobbytables
     - nikhita
+  sig-docs-leads:
+    - irvifa
+    - jimangel
+    - kbarnard10
+    - kbhawkey
+    - onlydole
+    - sftim
+  sig-instrumentation-leads:
+    - brancz
+    - dashpole
+    - ehashman
+    - logicalhan
+  sig-multicluster-leads:
+    - jeremyot
+    - pmorie
+  sig-network-leads:
+    - caseydavenport
+    - dcbw
+    - thockin
+  sig-node-leads:
+    - dchen1107
+    - derekwaynecarr
+  sig-release-leads:
+    - alejandrox1
+    - hasheddan
+    - justaugustus
+    - saschagrunert
+  sig-scalability-leads:
+    - mm4tt
+    - shyamjvs
+    - wojtek-t
+  sig-scheduling-leads:
+    - Huang-Wei
+    - ahg-g
+  sig-security-leads:
+    - iancoldwater
+    - tabbysable
+  sig-service-catalog-leads:
+    - jberkhahn
+    - jhvhs
+  sig-storage-leads:
+    - jsafrane
+    - msau42
+    - saad-ali
+    - xing-yang
+  sig-testing-leads:
+    - BenTheElder
     - spiffxp
+    - stevekuznetsov
+  sig-ui-leads:
+    - floreks
+    - jeefy
+    - maciaszczykm
+  sig-usability-leads:
+    - hpandeycodeit
+    - tashimi
+  sig-windows-leads:
+    - benmoss
+    - ddebroy
+    - marosset
+    - michmike
+  wg-api-expression-leads:
+    - apelisse
+    - kwiesmueller
+  wg-component-standard-leads:
+    - mtaufen
+    - stealthybox
+  wg-data-protection-leads:
+    - xing-yang
+    - yuxiangqian
+  wg-iot-edge-leads:
+    - cantbewong
+    - cindyxing
+    - dejanb
+  wg-k8s-infra-leads:
+    - bartsmykla
+    - dims
+    - spiffxp
+  wg-multitenancy-leads:
+    - srampal
+    - tashimi
+  wg-naming-leads:
+    - celestehorgan
+    - jdumars
+    - justaugustus
+    - zacharysarah
+  wg-policy-leads:
+    - ericavonb
+    - hannibalhuang
+  wg-reliability-leads:
+    - deads2k
+    - stevekuznetsov
+    - wojtek-t
+  ug-big-data-leads:
+    - erikerlandson
+    - foxish
+    - liyinan926
+  ug-vmware-users-leads:
+    - brysonshepherd
+    - cantbewong
+    - mylesagray
+    - phenixblue
+  committee-code-of-conduct:
+    - AevaOnline
+    - celestehorgan
+    - karenhchu
+    - tashimi
+    - tpepper
+  committee-product-security:
+    - cjcullen
+    - cji
+    - joelsmith
+    - lukehinds
+    - micahhausler
+    - swamymsft
+    - tallclair
+  committee-steering:
+    - cblecker
+    - derekwaynecarr
+    - dims
+    - liggitt
+    - mrbobbytables
+    - nikhita
+    - parispittman
+## BEGIN CUSTOM CONTENT
+  provider-aws:
+    - d-nishi
+    - justinsb
+    - kris-nova
+  provider-azure:
+    - craiglpeters
+    - justaugustus
+    - feiskyer
+    - khenidak
+  provider-gcp:
+    - abgworrall
+  provider-ibmcloud:
+    - spzala
+  provider-openstack:
+    - chrigl
+    - lingxiankong
+    - ramineni
+  provider-vmware:
+    - cantbewong
+    - frapposelli
+## END CUSTOM CONTENT
