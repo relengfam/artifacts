@@ -1,16 +1,47 @@
-# Kubernetes Template Project
+# Artifacts
 
-The Kubernetes Template Project is a template for starting new projects in the GitHub organizations owned by Kubernetes. All Kubernetes projects, at minimum, must have the following files:
+**This repo is under construction. Please continue to use
+[k8s.io/k8s.io][k/k8s.io] until this migration is officially announced.**
 
-- a `README.md` outlining the project goals, sponsoring sig, and community contact information
-- an `OWNERS` with the project leads listed as approvers ([docs on `OWNERS` files][owners])
-- a `CONTRIBUTING.md` outlining how to contribute to the project
-- an unmodified copy of `code-of-conduct.md` from this repo, which outlines community behavior and the consequences of breaking the code
-- a `LICENSE` which must be Apache 2.0 for code projects, or [Creative Commons 4.0] for documentation repositories, without any custom content
-- a `SECURITY_CONTACTS` with the contact points for the Product Security Team 
-  to reach out to for triaging and handling of incoming issues. They must agree to abide by the
-  [Embargo Policy](https://git.k8s.io/security/private-distributors-list.md#embargo-policy)
-  and will be removed and replaced if they violate that agreement.
+The artifacts repo ([k8s.io/artifacts][k/artifacts]) stores configuration files
+for the Kubernetes Community's artifact promoters:
+
+- [`cip` (container image promoter)][cip repo]
+- [`kpromo` (file promoter)][kpromo]
+
+Configurations are organized primarily in two directories:
+
+- `registries/` (configurations for image/registry promotion)
+- `stores/` (configurations for file/object store promotion)
+
+A snippet of the repo layout:
+
+```console
+├── registries
+│   └── k8s.gcr.io                          # Production container registry
+│       ├── config                          # Registry (GCR) promoter configurations
+│       │   ├── k8s-staging-releng
+│       │   │   └── promoter-manifest.yaml
+│       │   └── OWNERS
+│       └── images                          # Image manifests
+│           └── k8s-staging-releng
+│               └── OWNERS
+└── stores
+    └── artifacts.k8s.io                    # Production object store
+        ├── config                          # Object store (GCS) promoter configurations
+        │   ├── k8s-staging-releng
+        │   │   └── promoter-manifest.yaml
+        │   └── OWNERS
+        └── files                           # File manifests
+            └── k8s-staging-releng
+                └── OWNERS
+```
+
+## Resources
+
+- [Managing container registries](https://git.k8s.io/k8s.io/k8s.gcr.io)
+- [Image promoter KEP (1734)](https://git.k8s.io/enhancements/keps/sig-release/1734-k8s-image-promoter)
+- [Artifact management KEP (1732)](https://git.k8s.io/enhancements/keps/sig-release/1732-artifact-management)
 
 ## Community, discussion, contribution, and support
 
@@ -18,12 +49,16 @@ Learn how to engage with the Kubernetes community on the [community page](http:/
 
 You can reach the maintainers of this project at:
 
-- [Slack](http://slack.k8s.io/)
-- [Mailing List](https://groups.google.com/forum/#!forum/kubernetes-dev)
+- [Slack (`#release-management`)](https://kubernetes.slack.com/archives/CJH2GBF7Y)
+- [Release Managers mailing list](https://groups.google.com/a/kubernetes.io/g/release-managers)
+
+Extended contact information can be found [here](https://git.k8s.io/sig-release/release-managers.md).
 
 ### Code of conduct
 
 Participation in the Kubernetes community is governed by the [Kubernetes Code of Conduct](code-of-conduct.md).
 
-[owners]: https://git.k8s.io/community/contributors/guide/owners.md
-[Creative Commons 4.0]: https://git.k8s.io/website/LICENSE
+[cip repo]: https://sigs.k8s.io/k8s-container-image-promoter
+[k/artifacts]: https://git.k8s.io/artifacts
+[k/k8s.io]: https://git.k8s.io/k8s.io
+[kpromo]: https://git.k8s.io/release/cmd/kpromo/README.md
